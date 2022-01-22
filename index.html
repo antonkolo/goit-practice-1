@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -35,88 +43,119 @@
             <a href="">подобрать тур</a>
             <a href=""></a>
         </section>
-        <section>
-            <h2>Категории отдыха</h2>
-            <ul>
-                <li><a href=""><img src="./images/categories/Турбазы-на-Байкале.jpg" alt="Иллюстрация категории тура"
-                            width="256">
-                        <h3>Турбазы-на-Байкале</h3>
-                    </a></li>
-                <li><a href=""><img src="./images/categories/Экскурсии-и-туры.jpg" alt="Иллюстрация категории тура"
-                            width="256">
-                        <h3>Экскурсии и туры</h3>
-                    </a></li>
-                <li><a href=""><img src="./images/categories/Охота-и-рыбалка.jpg" alt="Иллюстрация категории тура"
-                            width="256">
-                        <h3>Охота и рыбалка</h3>
-                    </a></li>
-                <li><a href=""><img src="./images/categories/Экстрим-туры.jpg" alt="Иллюстрация категории тура"
-                            width="256">
-                        <h3>Экстрим туры</h3>
-                    </a></li>
-                <li><a href=""><img src="./images/categories/Теплоходы,-яхты.jpg" alt="Иллюстрация категории тура"
-                            width="256">
-                        <h3>Теплоходы, яхты</h3>
-                    </a></li>
-                <li><a href=""><img src="./images/categories/Красоты-Байкала.jpg" alt="Иллюстрация категории тура"
-                            width="256">
-                        <h3>Красоты Байкала</h3>
-                    </a></li>
-                <li><a href=""><img src="./images/categories/Гостиницы-в-Улан-Удэ.jpg" alt="Иллюстрация категории тура"
-                            width="256">
-                        <h3>Гостиницы в Улан-Удэ</h3>
-                    </a></li>
-                <li><a href=""><img src="./images/categories/Транспорт.jpg" alt="Иллюстрация категории тура"
-                            width="256">
-                        <h3>Транспорт</h3>
-                    </a></li>
-                <li><a href=""><img src="./images/categories/Деловой-туризм.jpg" alt="Иллюстрация категории тура"
-                            width="256">
-                        <h3>Деловой туризм</h3>
-                    </a></li>
-                <li><a href=""><img src="./images/categories/Круизы-по-Байкалу.jpg" alt="Иллюстрация категории тура"
-                            width="256">
-                        <h3>Круизы по Байкалу</h3>
-                    </a></li>
-                <li><a href=""><img src="./images/categories/Зимние-туры.jpg" alt="Иллюстрация категории тура"
-                            width="256">
-                        <h3>Зимние туры</h3>
-                    </a></li>
-                <li><a href=""><img src="./images/categories/О-Байкале.jpg" alt="Иллюстрация категории тура"
-                            width="256">
-                        <h3>Карта Байкала</h3>
-                    </a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Основные направления деятельности</h2>
-            <ul>
-                <li>
-                    <p>Групповые и индивидуальные туры по Байкалу для российских и иностранных туристов</p>
-                </li>
-                <li>
-                    <p>Экскурсии по городу Улан-Удэ, Республике Бурятия, городу Иркутск</p>
-                </li>
-                <li>
-                    <p>Услуги гидов-переводчиков на любом иностранном языке</p>
-                </li>
-                <li>
-                    <p>Круизы и прогулки по Байкалу на теплоходах и катерах</p>
-                </li>
-                <li>
-                    <p>Профессиональная организация охоты и рыбалки на Байкале</p>
-                </li>
-                <li>
-                    <p>Аренда автотранспорта для экскурсий и пассажирских перевозок</p>
-                </li>
-                <li>
-                    <p>Бронирование гостиниц в городе Улан-Удэ и на Байкале</p>
-                </li>
-                <li>
-                    <p>Организация индивидуальных туров и VIP-туров на Байкале</p>
-                </li>
-            </ul>
+        <section class="categories">
+            <div class="container">
+                <h2 class="visually-hidden">Категории отдыха</h2>
+                <ul class="categories-list">
+                    <li class="categories-item"><a href=""><img src="./images/categories/Турбазы-на-Байкале.jpg"
+                                alt="Иллюстрация категории тура" width="256">
+                            <div class="categories-wrapper">
+                                <h3 class="categories-subtitle">Турбазы на Байкале</h3>
+                            </div>
+                        </a></li>
+                    <li class="categories-item"><a href=""><img src="./images/categories/Экскурсии-и-туры.jpg"
+                                alt="Иллюстрация категории тура" width="256">
+                            <div class="categories-wrapper">
+                                <h3 class="categories-subtitle">Экскурсии и туры</h3>
+                            </div>
+                        </a></li>
+                    <li class="categories-item"><a href=""><img src="./images/categories/Охота-и-рыбалка.jpg"
+                                alt="Иллюстрация категории тура" width="256">
+                            <div class="categories-wrapper">
+                                <h3 class="categories-subtitle">Охота и рыбалка</h3>
+                            </div>
+                        </a></li>
+                    <li class="categories-item"><a href=""><img src="./images/categories/Экстрим-туры.jpg"
+                                alt="Иллюстрация категории тура" width="256">
+                            <div class="categories-wrapper">
+                                <h3 class="categories-subtitle">Экстрим туры</h3>
+                            </div>
+                        </a></li>
+                    <li class="categories-item"><a href=""><img src="./images/categories/Теплоходы,-яхты.jpg"
+                                alt="Иллюстрация категории тура" width="256">
+                            <div class="categories-wrapper">
+                                <h3 class="categories-subtitle">Теплоходы, яхты</h3>
+                            </div>
+                        </a></li>
+                    <li class="categories-item"><a href=""><img src="./images/categories/Красоты-Байкала.jpg"
+                                alt="Иллюстрация категории тура" width="256">
+                            <div class="categories-wrapper">
+                                <h3 class="categories-subtitle">Красоты Байкала</h3>
+                            </div>
+                        </a></li>
+                    <li class="categories-item"><a href=""><img src="./images/categories/Гостиницы-в-Улан-Удэ.jpg"
+                                alt="Иллюстрация категории тура" width="256">
+                            <div class="categories-wrapper">
+                                <h3 class="categories-subtitle">Гостиницы в Улан-Удэ</h3>
+                            </div>
+                        </a></li>
+                    <li class="categories-item"><a href=""><img src="./images/categories/Транспорт.jpg"
+                                alt="Иллюстрация категории тура" width="256">
+                            <div class="categories-wrapper">
+                                <h3 class="categories-subtitle">Транспорт</h3>
+                            </div>
+                        </a></li>
+                    <li class="categories-item"><a href=""><img src="./images/categories/Деловой-туризм.jpg"
+                                alt="Иллюстрация категории тура" width="256">
+                            <div class="categories-wrapper">
+                                <h3 class="categories-subtitle">Деловой туризм</h3>
+                            </div>
+                        </a></li>
+                    <li class="categories-item"><a href=""><img src="./images/categories/Круизы-по-Байкалу.jpg"
+                                alt="Иллюстрация категории тура" width="256">
+                            <div class="categories-wrapper">
+                                <h3 class="categories-subtitle">Круизы по Байкалу</h3>
+                            </div>
+                        </a></li>
+                    <li class="categories-item"><a href=""><img src="./images/categories/Зимние-туры.jpg"
+                                alt="Иллюстрация категории тура" width="256">
+                            <div class="categories-wrapper">
+                                <h3 class="categories-subtitle">Зимние туры</h3>
+                            </div>
+                        </a></li>
+                    <li class="categories-item"><a href=""><img src="./images/categories/О-Байкале.jpg"
+                                alt="Иллюстрация категории тура" width="256">
+                            <div class="categories-wrapper">
+                                <h3 class="categories-subtitle">Карта Байкала</h3>
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
 
+        </section>
+        <section class="directions">
+            <div class="container">
+                <h2 class="directions-title">Основные направления деятельности</h2>
+                <ul class="directions-list">
+                    <li class="directions-item">
+                        <p class="directions-description">Групповые и индивидуальные туры по Байкалу для российских и
+                            иностранных туристов</p>
+                    </li>
+                    <li class="directions-item">
+                        <p class="directions-description">Экскурсии по городу Улан-Удэ, Республике Бурятия, городу
+                            Иркутск</p>
+                    </li>
+                    <li class="directions-item">
+                        <p class="directions-description">Услуги гидов-переводчиков на любом иностранном языке</p>
+                    </li>
+                    <li class="directions-item">
+                        <p class="directions-description">Круизы и прогулки по Байкалу на теплоходах и катерах</p>
+                    </li>
+                    <li class="directions-item">
+                        <p class="directions-description">Профессиональная организация охоты и рыбалки на Байкале</p>
+                    </li>
+                    <li class="directions-item">
+                        <p class="directions-description">Аренда автотранспорта для экскурсий и пассажирских перевозок
+                        </p>
+                    </li>
+                    <li class="directions-item">
+                        <p class="directions-description">Бронирование гостиниц в городе Улан-Удэ и на Байкале</p>
+                    </li>
+                    <li class="directions-item">
+                        <p class="directions-description">Организация индивидуальных туров и VIP-туров на Байкале</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section>
             <h2>Популярные предложения</h2>
@@ -208,21 +247,32 @@
             </ul>
             <a href=""><img src="" alt="Иллюстрация экскурсий"><span>Показать все предложения</span></a>
         </section>
-        <section>
-            <h2>Фотогалерея</h2>
-            <a href="">Перейти в раздел</a>
-            <ul>
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
-            </ul>
-            <ul>
-                <li><img src="./images/gallery/Фотогалерея-1.jpg" alt="Виды Байкала" width="320"></li>
-                <li><img src="./images/gallery/Фотогалерея2.jpg" alt="Виды Байкала" width="320"></li>
-                <li><img src="./images/gallery/Фотогалерея3.jpg" alt="Виды Байкала" width="320"></li>
-                <li><img src="./images/gallery/Фотогалерея4.jpg" alt="Виды Байкала" width="320"></li>
-                <li><img src="./images/gallery/Фотогалерея5.jpg" alt="Виды Байкала" width="320"></li>
-                <li><img src="./images/gallery/Фотогалерея6.jpg" alt="Виды Байкала" width="320"></li>
-            </ul>
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery-wrapper">
+                    <h2 class="gallery-title">Фотогалерея</h2>
+                    <a href="" class="gallery-link">Перейти в раздел</a>
+                    <ul class="gallery-btn-list">
+                        <li class="gallery-btn-item"><button class="gallery-btn" type="button"></button></li>
+                        <li class="gallery-btn-item"><button class="gallery-btn" type="button"></button></li>
+                    </ul>
+                </div>
+                <ul class="gallery-img-list">
+                    <li class="gallery-img-item"><img src="./images/gallery/Фотогалерея-1.jpg" alt="Виды Байкала"
+                            width="352"></li>
+                    <li class="gallery-img-item"><img src="./images/gallery/Фотогалерея2.jpg" alt="Виды Байкала"
+                            width="352"></li>
+                    <li class="gallery-img-item"><img src="./images/gallery/Фотогалерея3.jpg" alt="Виды Байкала"
+                            width="352"></li>
+                    <li class="gallery-img-item"><img src="./images/gallery/Фотогалерея4.jpg" alt="Виды Байкала"
+                            width="352"></li>
+                    <li class="gallery-img-item"><img src="./images/gallery/Фотогалерея5.jpg" alt="Виды Байкала"
+                            width="352"></li>
+                    <li class="gallery-img-item"><img src="./images/gallery/Фотогалерея6.jpg" alt="Виды Байкала"
+                            width="352"></li>
+                </ul>
+            </div>
+
         </section>
         <section>
             <h2>Описание туристического агенства</h2>
